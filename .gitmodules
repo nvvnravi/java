@@ -1,0 +1,3 @@
+[submodule "stax"]
+	path = stax
+	url = https://github.com/nvvnravi/java
