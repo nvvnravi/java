@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+Here you can configure multiple monitors. 
+-->
+<monitorconfig>
+    <!-- Each monitor corresponds to a single 'domain' and has a unique name. This could be the domain name for easy identification. -->
+    <monitor name="name1">
+        <!-- host name - should be a fully qualified name like https://ditdev2.d1.na.ihs.gov . default value is 'localhost'-->
+        <host></host>
+        <!-- port name - port where the domain is running like 8181 or 8080  default value is '8080'-->
+        <port></port>
+        <!-- servicetimeout - It is the value which will be time out when trying to ping wither the server or the 
+        a particular endpoint. The value should be milliseconds. default value is 30 seconds-->
+        <servicetimeout></servicetimeout>
+        <!-- monitortimeout - This is the interval in between the pings . The value should be milliseconds..default valus is 30 min -->
+        <monitortimeout></monitortimeout>
+        <!-- endpoints - There are service endpoints on a particular domain. if there are no services to be pinged leave them blank.
+        These values should be a fully qualified service endpoints like          -->
+        <endpoints>
+            <endpoint></endpoint>
+            <endpoint></endpoint>
+            <endpoint></endpoint>
+        </endpoints>
+        <!-- from email address to send an email-->
+        <fromemailaddress> </fromemailaddress>   
+        <!-- to email address -->
+        <tomailaddresses> 
+            <tomailaddress> </tomailaddress> 
+            <tomailaddress> </tomailaddress> 
+        </tomailaddresses>   
+    </monitor>
+    <monitor name="name2">
+        <host></host>
+        <port></port>
+        <servicetimeout></servicetimeout>
+        <monitortimeout></monitortimeout>
+        <endpoints>
+            <endpoint></endpoint>
+            <endpoint></endpoint>
+            <endpoint></endpoint>
+        </endpoints>
+    </monitor>
+    <!-- smtp gateways to send emails . the deafult port 25 will be used. if it is other than 25 you need to add append it at the end 
+    like  'smtpgateway:35' -->
+    <smtpgateways>
+        <gateway></gateway>
+        <gateway></gateway>
+        <gateway></gateway>
+    </smtpgateways>
+</monitorconfig>
