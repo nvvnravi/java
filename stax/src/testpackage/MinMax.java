@@ -35,7 +35,7 @@ public class MinMax {
             System.out.println(" max : "+ max);
             System.out.println(" min : "+ min);
             
-           // System.out.println("https://localhost:8181/RESTService/webresources/customer/getValue/1".startsWith("https://"));
+           
             
         }
     
